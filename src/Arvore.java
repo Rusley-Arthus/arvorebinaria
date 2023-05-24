@@ -55,4 +55,29 @@ public class Arvore {
 
         }
     }
+
+    public void buscar (int valor, No no){
+        if (valor == no.getValor()){
+            System.out.println("Valor encontrado!");
+        }
+
+        if (valor > no.getValor()){
+            if (no.getDireita() == null){
+                System.out.println("Valor não encontrado!");
+            }
+            else {
+                buscar(valor, no.getDireita());
+            }
+        }
+
+        if(valor < no.getValor()){
+            if (no.getEsquerda() == null){
+                System.out.println("Valor não encontrado!");
+            }
+            else{
+                buscar(valor, no.getEsquerda());
+            }
+        }
+    }
+
 }

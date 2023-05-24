@@ -10,11 +10,7 @@ public class Main {
         minhaArvore.inserir(72);
         minhaArvore.inserir(81);
 
-        minhaArvore.imprimirPreOrdem(minhaArvore.raiz);
-        System.out.println("-------------------------");
-        minhaArvore.imprimirEmOrdem(minhaArvore.raiz);
-        System.out.println("-------------------------");
-        minhaArvore.imprimirPosOrdem(minhaArvore.raiz);
+        minhaArvore.buscar(15, minhaArvore.raiz);
 
     }
 }
