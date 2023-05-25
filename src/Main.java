@@ -2,15 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
         Arvore minhaArvore =  new Arvore();
-        minhaArvore.inserir(55);
-        minhaArvore.inserir(70);
-        minhaArvore.inserir(14);
-        minhaArvore.inserir(80);
-        minhaArvore.inserir(15);
-        minhaArvore.inserir(72);
-        minhaArvore.inserir(81);
+        minhaArvore.inserir(7);
+        minhaArvore.inserir(5);
+        minhaArvore.inserir(9);
+        minhaArvore.inserir(6);
+        minhaArvore.inserir(8);
+        minhaArvore.inserir(10);
 
-        minhaArvore.buscar(15, minhaArvore.raiz);
-
+        minhaArvore.imprimirEmOrdem(minhaArvore.raiz);
+        minhaArvore.eliminarNo(5, minhaArvore.raiz);
+        minhaArvore.imprimirEmOrdem(minhaArvore.raiz);
     }
 }

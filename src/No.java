@@ -2,11 +2,13 @@ public class No {
     private int valor;
     private No esquerda;
     private No direita;
+    private No pai;
 
     public No(int valor) {
         this.valor = valor;
         this.direita = null;
         this.esquerda = null;
+        this.pai = null;
 
     }
 
@@ -32,6 +34,14 @@ public class No {
 
     public void setDireita(No direita) {
         this.direita = direita;
+    }
+
+    public No getPai() {
+        return pai;
+    }
+
+    public void setPai(No pai) {
+        this.pai = pai;
     }
 
 }
